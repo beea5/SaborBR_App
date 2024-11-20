@@ -15,7 +15,7 @@ datasource db {
 
 
 model Customer {
-  id String @id @default(auto()) @map("_id") @db.ObjectId
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
   name        String
   end         String
   fone        String
@@ -25,6 +25,7 @@ model Customer {
   senha       String
   created_at  DateTime? @default(now())
   updated_at  DateTime? @default(now())
+  status      Boolean  @default(true)  // Adiciona o campo status
 
   @@map("customers")
 }
