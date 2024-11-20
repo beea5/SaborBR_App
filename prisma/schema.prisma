@@ -17,11 +17,12 @@ datasource db {
 model Customer {
   id String @id @default(auto()) @map("_id") @db.ObjectId
   name        String
+  end         String
+  fone        String
+  cep         String
+  complement  String?
   email       String   @unique
   senha       String
-  cep         String
-  n_end       String
-  complement  String?
   created_at  DateTime? @default(now())
   updated_at  DateTime? @default(now())
 
