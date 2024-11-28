@@ -3,6 +3,7 @@ import { request } from "http";
 import { CreateCustomerController } from './controllers/CreateCustomerController'
 import { ListCustomersController } from './controllers/ListCustomersController'
 import { DeleteCustomerController } from './controllers/DeleteCustomerController'
+import { LoginController } from './controllers/LoginController'; 
 
 export async function routes(fastify: FastifyInstance, options: FastifyPluginOptions) {
   // Define a rota GET /teste
@@ -22,5 +23,9 @@ export async function routes(fastify: FastifyInstance, options: FastifyPluginOpt
    fastify.delete("/customer", async ( request: FastifyRequest, reply: FastifyReply) =>{
     return new DeleteCustomerController().handle(request, reply)
    })
+
+   fastify.post("/login", async (request: FastifyRequest, reply: FastifyReply) => {
+    return new LoginController().handle(request, reply);
+  });
 
 }
