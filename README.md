@@ -10,8 +10,7 @@ O grupo é composto pelos seguintes integrantes:
 
 ## Disciplina
 
-Este trabalho foi desenvolvido no âmbito da disciplina **Programação Para Dispositivos Móveis em Android**, oferecida no curso de **Tecnologia em Análise e Desenvolvimento de Sistemas**.
-
+Este trabalho foi desenvolvido no âmbito da disciplina **Programação Para Dispositivos Móveis em Android**.
 ## Objetivo do Trabalho
 
 O objetivo principal deste projeto é criar um aplicativo móvel para a **padaria SaborBr**, especializada na venda de marmitas. O aplicativo tem como propósito **facilitar a solicitação e entrega dos pedidos**, proporcionando uma experiência de compra simples e eficiente para os usuários.
