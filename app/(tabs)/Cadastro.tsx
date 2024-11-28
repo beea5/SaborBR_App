@@ -56,7 +56,7 @@ export default function HomeScreen({ navigation }) {
   
     try {
       // Enviar dados para o servidor via POST
-      const response = await fetch('http://192.168.0.10:3333/customer', {
+      const response = await fetch('http://192.168.100.18:3333/customer', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
